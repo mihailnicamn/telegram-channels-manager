@@ -83,8 +83,9 @@ The script is able to:
 ## Installation
 - Clone the repo
 - Install the dependencies
-> npm install
-> node app.js
+ > npm install
+ 
+ > node app.js
 
 ## Configuration
 - Create a bot on telegram using the [BotFather](https://t.me/botfather)
