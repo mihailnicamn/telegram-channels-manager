@@ -1,0 +1,39 @@
+{
+  "name": "telegram-channels-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "abort-controller": "^3.0.0",
+    "asynckit": "^0.4.0",
+    "axios": "^0.27.2",
+    "buffer-alloc": "^1.2.0",
+    "buffer-alloc-unsafe": "^1.1.0",
+    "buffer-fill": "^1.0.0",
+    "combined-stream": "^1.0.8",
+    "debug": "^4.3.4",
+    "delayed-stream": "^1.0.0",
+    "dotenv": "^16.0.3",
+    "event-target-shim": "^5.0.1",
+    "follow-redirects": "^1.15.2",
+    "form-data": "^4.0.0",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "mri": "^1.2.0",
+    "ms": "^2.1.2",
+    "node-fetch": "^2.6.7",
+    "p-timeout": "^4.1.0",
+    "safe-compare": "^1.1.4",
+    "sandwich-stream": "^2.0.2",
+    "telegraf": "^4.9.2",
+    "tr46": "^0.0.3",
+    "typegram": "^3.12.0",
+    "webidl-conversions": "^3.0.1",
+    "whatwg-url": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

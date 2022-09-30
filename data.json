@@ -1,0 +1,72 @@
+{
+    "channels": {
+        "free": {
+            "password": "",
+            "id": 0,
+            "verified": false
+        },
+        "paid": {
+            "password": "",
+            "id": 0,
+            "verified": false
+        }
+    },
+    "admin": {
+        "name": "telegram_last_name",
+        "id": 0,
+        "username": "telegram_username"
+    },
+    "bot": {
+        "name": "Signal Manager",
+        "description": ""
+    },
+    "users": {
+        "memberships": {
+            "running": [],
+            "pending": []
+        }
+    },
+    "settings": {
+        "free": {
+            "signal_frequency_type": 1,
+            "signal_frequency": 1
+        },
+        "paid": {
+            "pricing": []
+        }
+    },
+    "signals": {
+        "paid": [],
+        "free": []
+    },
+    "messages": {
+        "admin": {
+            "start_new": "Welcome! I'm {bot_name} that can help you manage your trading signals 📈 \n\n Use <b>/help</b> to see the list of available commands.",
+            "start_again": "Welcome back, <b>{admin_name}</b>! \n\n Use <b>/help</b> to see the list of available commands.",
+            "help": "Here is a list of available commands : \nSend <b>/connect_premium</b> here to connect your premium channel\nSend <b>/connect_free</b> here to connect your free channel\nSend <b>/disconnect</b> here to disconnect the bot from the channels \nSend <b>/status</b> here to check your channels status \nSend <b>/earnings</b> to get a report of your premium channel membership earnings \nSend <b>/running</b> to see the list of approved memberships \nSend <b>/pending</b> to see the list of pending premium channel approvals \nSend <b>/settings</b> here to check your channels & signals settings \nSend <b>/help</b> here to see this list again",
+            "connect": "Send the folowing password to your {channel_type} channel: <b>{password}</b>",
+            "disconnect": "{bot_name} has been disconnected from the channels",
+            "link_success": "Your {channel_type} channel has linked! {bot_name} will send the signals here",
+            "settings_help": "Here is a list of available settings commands : \nSend <b>/settings_free</b> here to check your free channel settings \nSend <b>/settings_premium</b> here to check your premium channel settings \nSend <b>/settings</b> here to see this list again",
+            "settings_free_help": "Send <b>/settings_free#[parameter]=[value]</b> to adjust the parameters of your free channel\nThe parameters are :\n<b>signal_frequency_type</b>[0 for Counter based and 1 for Day based]\n<b>signal_frequency</b>[The frequency of the signals]\nExample:\nuse <b>/settings_free#signal_frequency_type=0</b>\nwith\n<b>/settings_free#signal_frequency=10</b>\nto send 1 free signal for each 10 premium ones\n for daily based signals will be sent every <b>signal_frequency</b> days",
+            "settings_premium_help": "Send <b>/settings_premium#pricing_create</b> to add a membership package to your premium channel\nSend <b>/settings_premium#pricing_remove</b> to remove a membership package to your premium channel\nSend <b>/settings_premium#pricing_edit#[package id]#[parameter]=[value]</b> to edit a membership package to your premium channel\nExample:\nuse <b>/settings_premium#pricing_add</b> to create 1st Package\nthan with\n<b>/settings_premium#pricing_edit#1#name=1 Month</b>\n<b>/settings_premium#pricing_edit#1#price=0.1</b>\n<b>/settings_premium#pricing_edit#1#currency=BTC</b>\n<b>/settings_premium#pricing_edit#1#duration=30</b>\nedit the new package into a <b>1 Month</b> membership package with a price of <b>0.1 BTC</b> and a duration of <b>30 days</b>\nto remove the package use <b>/settings_premium#pricing_remove#1</b>",
+            "pending": "You have {pending_counter} requests\nThe following users have requested to join your premium channel : \n{pending_list}",
+            "running": "You have {running_counter} members\nThe following users are currently subscribed to your premium channel : \n{running_list}",
+            "status": "Your free channel has {free_members_counter} members\nYour premium channel has {premium_members_counter} members from which {premium_members_memberships} memberships\nYour premium channel has {premium_pending_counter} pending requests",
+            "earnings": "You have earned:\n{earnings_list}\n",
+            "remove": "The request has been removed",
+            "approve": "The request has been approved",
+            "test": "test"
+        },
+        "public": {
+            "start": "Welcome! I'm {bot_name} that can help you manage your trading signals 📈 \n\n Use <b>/help</b> to see the list of available commands.",
+            "help": "Here is a list of available commands : \n <b>/new_membership</b> \nSend <b>/help</b> here to see this list again",
+            "membership_selected": "Oh, {package_name} ({package_duration} days) for only {package_price} {package_currency}, that's a great choice!",
+            "membership_pending": "Your {package_name} ({package_duration} days) on {package_price} {package_currency} request has been sent to the admin, please wait for approval",
+            "membership_already_requested": "You have already requested a {package_name} ({package_duration} days) on {package_price} {package_currency} membership",
+            "membership_already_running": "You are already subscribed to a {package_name} ({package_duration} days) on {package_price} {package_currency} membership",
+            "membership_approved": "Your {package_name} ({package_duration} days) on {package_price} {package_currency} membership has been approved you may start reveiving the signals on channel {channel_link}",
+            "test": "test"
+        }
+    }
+}
